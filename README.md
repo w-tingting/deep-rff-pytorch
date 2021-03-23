@@ -3,10 +3,13 @@
 This repository implements SDCRKL-GP (Scalable Deep Convolutional Random Kernel Learning in Gaussian Process for Image Recognition).
 
 # Installation
+
 python 3.7.4
+
 pytorch 1.7.0
 
 # Run
+
 ```
 git clone https://github.com/w-tingting/deep-rff-pytorch.git
 cd experiments
@@ -14,11 +17,13 @@ python run.py
 ```
 
 # Evaluate
+
 ```
 cd experiments
 python test.py
 ```
 # Result
+
 |     datasets      | error rate (%) | nlpp  | Parameters | FLOPs   | MAC     |
 | :---------------: | :------------: | ----- | ---------- | ------- | ------- |
 |       MNIST       |      0.60      | 0.020 | 19.088k    | 0.984M  | 1.057M  |
