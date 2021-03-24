@@ -29,6 +29,8 @@ if __name__ == '__main__':
                         help='Monte Calro (default: 10)')
     parser.add_argument('--dataset', type=str, default="CIFAR10",
                         help='MNIST FMNIST CIFAR10 caltech4 EuroSAT (default: MNIST)')
+    parser.add_argument('--kernel-type', type=str, default="RBF",
+                        help='RBF arccos (default: RBF)')
     args = parser.parse_args()
 
 
@@ -45,7 +47,7 @@ if __name__ == '__main__':
 
     train_loader, test_loader, _ = datasets.init_dataset(args)
     id_to_cls = idx_to_classes(args)
-    model = Net(args.batch_size, args.mc, args.num_classes).to(device)
+    model = Net(args.batch_size, args.mc,args.kernel_type,args.num_classes).to(device)
     model.load_state_dict(torch.load('CIFAR10_net_12-31-2020_17-53-54.pth'))
 
     model.eval()
