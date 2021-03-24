@@ -1,6 +1,6 @@
 # deep-rff-pytorch
 
-This repository implements SDCRKL-GP (Scalable Deep Convolutional Random Kernel Learning in Gaussian Process for Image Recognition).
+This repository implements SDCRKL-GP (Scalable Deep Convolutional Random Kernel Learning in Gaussian Process for Image Recognition).We directly present a demo of the algorithm on MNIST dataset.Training on other data sets, such as CIFAR10, caltech4,CIFAR100,tiny-ImageNet-200, etc., requires users to modify the network architecture design in `model.py` by themselves
 
 # Installation
 
